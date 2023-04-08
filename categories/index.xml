@@ -5,6 +5,25 @@
     <link>https://h3dengine.com/categories/</link>
     <description>Recent content in Categories on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://h3dengine.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Apr 2023 11:21:58 +0800</lastBuildDate><atom:link href="https://h3dengine.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>https://h3dengine.com/categories/tech/</link>
+      <pubDate>Sat, 08 Apr 2023 11:21:58 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://h3dengine.com/categories/website/</link>
+      <pubDate>Sat, 08 Apr 2023 11:21:58 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/categories/website/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

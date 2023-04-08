@@ -5,6 +5,25 @@
     <link>https://h3dengine.com/tags/</link>
     <description>Recent content in Tags on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://h3dengine.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Apr 2023 11:21:58 +0800</lastBuildDate><atom:link href="https://h3dengine.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github</title>
+      <link>https://h3dengine.com/tags/github/</link>
+      <pubDate>Sat, 08 Apr 2023 11:21:58 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://h3dengine.com/tags/hugo/</link>
+      <pubDate>Sat, 08 Apr 2023 11:21:58 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
