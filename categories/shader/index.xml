@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shader on H3DEngine non-official Site</title>
+    <link>https://h3dengine.com/categories/shader/</link>
+    <description>Recent content in Shader on H3DEngine non-official Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Jul 2023 15:06:14 +0800</lastBuildDate><atom:link href="https://h3dengine.com/categories/shader/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VertexShader中的aPos</title>
+      <link>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</link>
+      <pubDate>Sat, 15 Jul 2023 15:06:14 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</guid>
+      <description>看着教程，突然忘了shader中的location是怎么用的。找回来，记一下。</description>
+    </item>
+    
+  </channel>
+</rss>

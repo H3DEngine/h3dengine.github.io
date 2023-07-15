@@ -6,7 +6,16 @@
     <description>Recent content on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Apr 2023 11:21:58 +0800</lastBuildDate><atom:link href="https://h3dengine.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 15:06:14 +0800</lastBuildDate><atom:link href="https://h3dengine.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VertexShader中的aPos</title>
+      <link>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</link>
+      <pubDate>Sat, 15 Jul 2023 15:06:14 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</guid>
+      <description>看着教程，突然忘了shader中的location是怎么用的。找回来，记一下。</description>
+    </item>
+    
     <item>
       <title>使用Hugo创建静态博客</title>
       <link>https://h3dengine.com/2023/04/%E4%BD%BF%E7%94%A8hugo%E5%88%9B%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</link>

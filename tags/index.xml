@@ -6,7 +6,25 @@
     <description>Recent content in Tags on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Apr 2023 11:21:58 +0800</lastBuildDate><atom:link href="https://h3dengine.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Jul 2023 15:06:14 +0800</lastBuildDate><atom:link href="https://h3dengine.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenGL</title>
+      <link>https://h3dengine.com/tags/opengl/</link>
+      <pubDate>Sat, 15 Jul 2023 15:06:14 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/tags/opengl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shader</title>
+      <link>https://h3dengine.com/tags/shader/</link>
+      <pubDate>Sat, 15 Jul 2023 15:06:14 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/tags/shader/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Github</title>
       <link>https://h3dengine.com/tags/github/</link>
