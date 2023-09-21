@@ -45,6 +45,37 @@
         
           
           
+          
+        
+        
+        
+      
+        
+        
+        
+        
+        
+          
+          
+          
+        
+        
+        
+      
+      
+    
+  
+    
+    
+      
+      
+        
+        
+        
+        
+        
+          
+          
         
         
         
@@ -150,7 +181,42 @@
     
       
     
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
     
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
   </head>
 
   <body>
@@ -294,9 +360,43 @@
               
                 
                 <div>
+                  <a href="#posts-list-computer-graphics" class="category-anchor" data-category="Computer Graphics" data-parent-categories="">Computer Graphics</a>
+                  
+                    
+                    
+                      
+
+  <ul style="margin-bottom:0;">
+    <div>
+      <a href="#posts-list-graphics" class="category-anchor" data-category="Graphics" data-parent-categories="computer-graphics"> / Graphics</a>
+    </div>
+  
+  
+  
+  </ul>
+
+
+                    
+                      
+
+
+                    
+                      
+
+
+                    
+                  
+                </div>
+              
+                
+                <div>
                   <a href="#posts-list-tech" class="category-anchor" data-category="Tech" data-parent-categories="">Tech</a>
                   
                     
+                    
+                      
+
+
                     
                       
 
@@ -333,6 +433,66 @@
             
               
                 
+                <div id="posts-list-computer-graphics" class="archive box" data-category="Computer Graphics" data-parent-categories="" style="display: block;">
+                  <h4 class="archive-title text-xlarge">
+                    <a class="link-unstyled" href="computer-graphics">Computer Graphics (1)</a>
+                  </h4>
+                  <ul class="archive-posts">
+                    
+                      <li class="archive-post">
+                        <a class="archive-post-title" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra/">[FoCG5] 6 Linear Algebra</a><span class="archive-post-date"> - 
+  
+  
+  
+  
+    2023-09-21 23:51:03
+  
+</span>
+                      </li>
+                    
+                    
+                      
+                      
+                        
+
+  <div id="posts-list-graphics" class="archive" data-category="Graphics" data-parent-categories="computer-graphics" style="display: block;">
+  <h4 class="archive-title text-xlarge">
+    <a class="link-unstyled" href="graphics">Graphics (1)</a>
+  </h4>
+  <ul class="archive-posts">
+    
+      <li class="archive-post" style="display: list-item;">
+        <a class="archive-post-title" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra/">[FoCG5] 6 Linear Algebra</a><span class="archive-post-date"> - 
+  
+  
+  
+  
+    2023-09-21 23:51:03
+  
+</span>
+      </li>
+    
+  </ul>
+  
+  
+  
+  </div>
+
+
+                      
+                        
+
+
+                      
+                        
+
+
+                      
+                    
+                  </ul>
+                </div>
+              
+                
                 <div id="posts-list-tech" class="archive box" data-category="Tech" data-parent-categories="" style="display: block;">
                   <h4 class="archive-title text-xlarge">
                     <a class="link-unstyled" href="tech">Tech (2)</a>
@@ -363,6 +523,10 @@
                     
                     
                       
+                      
+                        
+
+
                       
                         
 

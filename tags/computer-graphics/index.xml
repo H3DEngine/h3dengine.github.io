@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Graphics on H3DEngine non-official Site</title>
+    <link>https://h3dengine.com/tags/computer-graphics/</link>
+    <description>Recent content in Computer Graphics on H3DEngine non-official Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Sep 2023 23:51:03 +0800</lastBuildDate><atom:link href="https://h3dengine.com/tags/computer-graphics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[FoCG5] 6 Linear Algebra</title>
+      <link>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</link>
+      <pubDate>Thu, 21 Sep 2023 23:51:03 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</guid>
+      <description>图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。</description>
+    </item>
+    
+  </channel>
+</rss>

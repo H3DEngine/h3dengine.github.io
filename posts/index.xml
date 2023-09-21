@@ -6,14 +6,23 @@
     <description>Recent content in Posts on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 15:06:14 +0800</lastBuildDate><atom:link href="https://h3dengine.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Sep 2023 23:51:03 +0800</lastBuildDate><atom:link href="https://h3dengine.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[FoCG5] 6 Linear Algebra</title>
+      <link>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</link>
+      <pubDate>Thu, 21 Sep 2023 23:51:03 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</guid>
+      <description>图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。</description>
+    </item>
+    
     <item>
       <title>VertexShader中的aPos</title>
       <link>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</link>
       <pubDate>Sat, 15 Jul 2023 15:06:14 +0800</pubDate>
       
       <guid>https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/</guid>
-      <description>看着教程，突然忘了shader中的location是怎么用的。找回来，记一下。</description>
+      <description>看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。</description>
     </item>
     
     <item>

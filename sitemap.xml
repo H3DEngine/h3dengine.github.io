@@ -2,25 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
     <loc>https://h3dengine.com/categories/</loc>
-    <lastmod>2023-07-15T15:06:14+08:00</lastmod>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/tags/computer-graphics/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/categories/computer-graphics/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/tags/focg5/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/categories/graphics/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
   </url><url>
     <loc>https://h3dengine.com/</loc>
-    <lastmod>2023-07-15T15:06:14+08:00</lastmod>
-  </url><url>
-    <loc>https://h3dengine.com/tags/opengl/</loc>
-    <lastmod>2023-07-15T15:06:14+08:00</lastmod>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
   </url><url>
     <loc>https://h3dengine.com/posts/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/tags/</loc>
+    <lastmod>2023-09-21T23:51:03+08:00</lastmod>
+  </url><url>
+    <loc>https://h3dengine.com/tags/opengl/</loc>
     <lastmod>2023-07-15T15:06:14+08:00</lastmod>
   </url><url>
     <loc>https://h3dengine.com/tags/shader/</loc>
     <lastmod>2023-07-15T15:06:14+08:00</lastmod>
   </url><url>
     <loc>https://h3dengine.com/categories/shader/</loc>
-    <lastmod>2023-07-15T15:06:14+08:00</lastmod>
-  </url><url>
-    <loc>https://h3dengine.com/tags/</loc>
     <lastmod>2023-07-15T15:06:14+08:00</lastmod>
   </url><url>
     <loc>https://h3dengine.com/categories/tech/</loc>

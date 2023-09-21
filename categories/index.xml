@@ -6,7 +6,25 @@
     <description>Recent content in Categories on H3DEngine non-official Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Jul 2023 15:06:14 +0800</lastBuildDate><atom:link href="https://h3dengine.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Sep 2023 23:51:03 +0800</lastBuildDate><atom:link href="https://h3dengine.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computer Graphics</title>
+      <link>https://h3dengine.com/categories/computer-graphics/</link>
+      <pubDate>Thu, 21 Sep 2023 23:51:03 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/categories/computer-graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>https://h3dengine.com/categories/graphics/</link>
+      <pubDate>Thu, 21 Sep 2023 23:51:03 +0800</pubDate>
+      
+      <guid>https://h3dengine.com/categories/graphics/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Shader</title>
       <link>https://h3dengine.com/categories/shader/</link>

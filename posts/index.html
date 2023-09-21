@@ -10,7 +10,7 @@
   "headline": "Posts",
   
   "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "2023-07-15T15:06:14+08:00",
+  "dateModified": "2023-09-21T23:51:03+08:00",
   "author": {
     "@type": "Person",
     "name": "H3DEngine Blog",
@@ -98,7 +98,42 @@
     
       
     
+    <script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
     
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
   </head>
 
   <body>
@@ -249,6 +284,73 @@
     <div class="postShorten-header">
       <h1 class="postShorten-title">
       
+        <a class="link-unstyled" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra/" aria-label="">
+      
+          [FoCG5] 6 Linear Algebra
+        </a>
+      </h1>
+      
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2023-09-21T23:51:03&#43;08:00">
+        
+  
+  
+  
+  
+    2023-09-21 23:51:03
+  
+
+      </time>
+    
+    
+  
+  
+    <span></span>
+    
+      <a class="category-link" href="https://h3dengine.com/categories/computer-graphics">Computer Graphics</a>, 
+    
+      <a class="category-link" href="https://h3dengine.com/categories/graphics">Graphics</a>
+    
+  
+
+  </div>
+
+    </div>
+    <div class="postShorten-excerpt">
+      
+        图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。
+      
+      <p>
+        
+          <a href="https://h3dengine.com/2023/09/focg5-6-linear-algebra/" class="postShorten-excerpt_link link" aria-label=""></a>
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
+          
+            
+  
+    
+      
+        
+      
+    
+  
+
+
+  
+
+<article class="postShorten postShorten--thumbnailimg-bottom">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title">
+      
         <a class="link-unstyled" href="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" aria-label="">
       
           VertexShader中的aPos
@@ -284,7 +386,7 @@
     </div>
     <div class="postShorten-excerpt">
       
-        看着教程，突然忘了shader中的location是怎么用的。找回来，记一下。
+        看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。
       
       <p>
         
