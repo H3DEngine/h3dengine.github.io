@@ -118,9 +118,7 @@
     
       
     
-    <script type="text/javascript"
-        async
-        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <script type="text/javascript" async src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 MathJax.Hub.Config({
   tex2jax: {
     inlineMath: [['$','$'], ['\\(','\\)']],
@@ -326,36 +324,66 @@ code.has-jax {
 <p>图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。</p>
 <p>如果读者对线性代数比较熟悉，可以跳过本章。不过，即使对这类读者来说，也会有一些启发性的小知识，例如行列式的发展以及奇异值和特征值分解的讨论。</p>
 <h2 id="61-行列式">6.1 行列式</h2>
-<p>我们通常使用行列式来解线性方程。此外，从图形学方面来看，我们还可以把行列式看作多维向量的另一种形式。对二维向量$a$和$b$，行列式$|ab|$的就是这两个向量形成的面积（图6.1）。这个面积是有符号的，如果是右手系，则结果为正；左手系结果为负。也就是$|ab| = -|ba|$。在2D中，我们说的“右手系”是指第一个向量沿逆时针旋转最少的角度就可以与第二个向量重合。</p>
+<p>我们通常使用行列式来解线性方程。此外，从图形学方面来看，我们还可以把行列式看作多维向量的另一种形式。对二维向量$\boldsymbol{a}$和$\boldsymbol{b}$，行列式$|\boldsymbol{ab}|$的就是这两个向量形成的面积（图6.1）。这个面积是有符号的，如果是右手系，则结果为正；左手系结果为负。也就是$|\boldsymbol{ab}| = -|\boldsymbol{ba}|$。在2D中，我们说的“右手系”是指第一个向量沿逆时针旋转最少的角度就可以与第二个向量重合。</p>
 <p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.1.png" alt="image-6.1"></p>
-<p>在3D中，行列式是由三个向量组成的，三维向量$a$、$b$、$c$组成的行列式$|abc|$是一个由这三个向量组成的平行六面体（图6.2）。</p>
+<p>在三维空间中，行列式是由三个向量组成的，三维向量$\boldsymbol{a}$、$\boldsymbol{b}$、$\boldsymbol{c}$组成的行列式$|\boldsymbol{abc}|$是一个由这三个向量组成的平行六面体（图6.2）。</p>
 <p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.2.png" alt="image-6.2"></p>
 <p>为了计算二维行列式，我们需要首先了解一些性质。</p>
-<p>当我们缩放其中一个向量，平行四边形的面积也随之缩放同样的倍数（图6.3）：
-$$
-|(ka)b| = |a(kb)| = k|ab|
-$$
-<img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.3-scaling.png" alt="image-6.3-scaling"></p>
-<p>同样，我们对平行四边形进行<em>剪切</em>变换，也不会改变其面积（图6.4）：
-$$
-|(a+kb)b| = |a(b+ka)| = |ab|
-$$
-<img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.4-shearing.png" alt="image-6.4-shearing"></p>
-<p>此外，行列式还有以下属性：
-$$
-|a(b+c)| = |ab| + |ac|
+<p>当我们缩放其中一个向量，平行四边形的面积也随之缩放同样的倍数（图6.3）：</p>
+<p>$$
+|(k\boldsymbol{a})\boldsymbol{b}| = |\boldsymbol{a}(k\boldsymbol{b})| = k|\boldsymbol{ab}|
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.3-scaling.png" alt="image-6.3-scaling"></p>
+<p>同样，我们对平行四边形进行<em>剪切</em>变换，也不会改变其面积（图6.4）：</p>
+<p>$$
+|(\boldsymbol{a}+k\boldsymbol{b})\boldsymbol{b}| = |\boldsymbol{a}(\boldsymbol{b}+k\boldsymbol{a})| = |\boldsymbol{ab}|
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.4-shearing.png" alt="image-6.4-shearing"></p>
+<p>此外，行列式还有以下属性：</p>
+<p>$$
+|\boldsymbol{a}(\boldsymbol{b}+\boldsymbol{c})| = |\boldsymbol{ab}| + |\boldsymbol{ac}|
 $$</p>
 <p>如图6.5所示，我们可以在不改变面积的情况下，把两个平行四边形的边进行滑动，形成一个大的平行四边形。</p>
 <p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.5.png" alt="image-6.5"></p>
-<p>假设有笛卡尔坐标系下的两个向量$a$和$b$，则：
-$$
+<p>假设有笛卡尔坐标系下的两个向量$\boldsymbol{a}$和$\boldsymbol{b}$，则：</p>
+<p>$$
 \begin{eqnarray}
-|ab| &amp; = &amp; |(x_a\mathrm{x} + y_a\mathrm{y} )(x_b\mathrm{x} + y_b\mathrm{y})| \
-~ &amp; = &amp; x_ax_b|\mathrm{xx}| + x_ay_b|\mathrm{xy}| + y_ax_b|\mathrm{yx}| + y_ay_b|\mathrm{yy}| \
-~ &amp; = &amp; x_ax_b(0) + x_ay_b(+1) + y_ax_b(-1) + y_ay_b(0) \
+|\boldsymbol{ab}| &amp; = &amp; |(x_a\boldsymbol{x} + y_a\boldsymbol{y} )(x_b\boldsymbol{x} + y_b\boldsymbol{y})| \\
+~ &amp; = &amp; x_ax_b|\boldsymbol{xx}| + x_ay_b|\boldsymbol{xy}| + y_ax_b|\boldsymbol{yx}| + y_ay_b|\boldsymbol{yy}| \\
+~ &amp; = &amp; x_ax_b(0) + x_ay_b(+1) + y_ax_b(-1) + y_ay_b(0) \\
 ~ &amp; = &amp; x_ay_b - y_ax_b.
 \end{eqnarray}
 $$</p>
+<p>化简的时候用到了一个性质：对于任意的向量$\boldsymbol{v}$，都有$|\boldsymbol{vv}|=0$。因为共线的两个向量组成的平行四边形的面积为0。</p>
+<p>在三维情况中，三维向量 $\boldsymbol{a}$ 、 $\boldsymbol{b}$ 、 $\boldsymbol{c}$ 的行列式用 $|\boldsymbol{abc}|$ 表示。同2D情况一样，我们可以将其展开为：</p>
+<p>$$
+\begin{eqnarray}
+|\boldsymbol{abc}| &amp; = &amp; |(x_a\boldsymbol{x} + y_a\boldsymbol{y} + z_a\boldsymbol{z})(x_b\boldsymbol{x} + y_b\boldsymbol{y} + z_b\boldsymbol{z})(x_c\boldsymbol{x} + y_c\boldsymbol{y} + z_c\boldsymbol{z})| \\
+~ &amp; = &amp; x_ay_bz_c - x_az_by_c - y_ax_bz_c + y_az_bx_c + z_ax_by_c - z_ay_bx_c.
+\end{eqnarray}
+$$</p>
+<p>显然，随着维数的增加，以这种方式来计算行列式会变得越来越难看。我们将在第 6.3 节讨论怎样在计算行列式的时候更不容易出错。</p>
+<p><!-- raw HTML omitted --><strong>例2</strong><!-- raw HTML omitted --> 在计算一个由另外两个向量的线性组合而得到的向量时，行列式便应运而生了。例如，如果我们用向量$\boldsymbol{a}$和$\boldsymbol{b}$来表示向量$\boldsymbol{c}$，即：</p>
+<p>$$
+\boldsymbol{c} = a_c\boldsymbol{a} + b_c\boldsymbol{b}
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.6.png" alt="image-6.6"></p>
+<blockquote>
+<p>图6.6 左侧图中，向量 $\boldsymbol{c}$ 可以表示为 $a_c\boldsymbol{a} + b_c\boldsymbol{b}$ 。右侧图中，由向量 $\boldsymbol{a}$ 和 $\boldsymbol{c}$ 形成的平行四边形实际是剪切了的由 $b_c\boldsymbol{b}$ 和 $\boldsymbol{a}$ 形成的平行四边形。</p>
+</blockquote>
+<p>由图6.6可得，下面等式两边所表示的平行四边形的面积是相等的：</p>
+<p>$$
+|(b_c\boldsymbol{b})\boldsymbol{a}| = |\boldsymbol{ca}|
+$$</p>
+<p>可得$b_c$的值为：</p>
+<p>$$
+b_c = \frac {|\boldsymbol{ca}|}{|\boldsymbol{ba}|}
+$$</p>
+<p>类似可得：</p>
+<p>$$
+a_c = \frac {|\boldsymbol{bc}|}{|\boldsymbol{ba}|}
+$$</p>
+<p>这实际是二维版本的<a href="https://zh.wikipedia.org/zh-hans/%E5%85%8B%E8%90%8A%E5%A7%86%E6%B3%95%E5%89%87"><em>克莱姆法则</em></a>。在6.3.2中我们会详细解释。</p>
 <blockquote>
 <p>TBD</p>
 </blockquote>
