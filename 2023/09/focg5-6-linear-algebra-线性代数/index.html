@@ -7,10 +7,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "VertexShader中的aPos",
+  "headline": "[FoCG5] 6 Linear Algebra 线性代数",
   
-  "datePublished": "2023-07-15T15:06:14+08:00",
-  "dateModified": "2023-07-15T15:06:14+08:00",
+  "datePublished": "2023-09-21T23:51:03+08:00",
+  "dateModified": "2023-09-21T23:51:03+08:00",
   "author": {
     "@type": "Person",
     "name": "A H3DEngine Blog",
@@ -20,7 +20,7 @@
   },
   "mainEntityOfPage": { 
     "@type": "WebPage",
-    "@id": "https:\/\/h3dengine.com\/2023\/07\/vertexshader%E4%B8%AD%E7%9A%84apos\/" 
+    "@id": "https:\/\/h3dengine.com\/2023\/09\/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0\/" 
   },
   "publisher": {
     "@type": "Organization",
@@ -32,8 +32,8 @@
     }
     
   },
-  "description": "看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。",
-  "keywords": ["tech", "Hot"]
+  "description": "图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。",
+  "keywords": ["tech, Computer Graphics", "Hot"]
 }
 
 </script>
@@ -42,40 +42,40 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.111.3 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="A H3DEngine Blog">
-<meta name="keywords" content="tech, Hot">
-<meta name="description" content="看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。">
+<meta name="keywords" content="tech, Computer Graphics, Hot">
+<meta name="description" content="图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。">
 
 
-<meta property="og:description" content="看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。">
+<meta property="og:description" content="图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VertexShader中的aPos">
-<meta name="twitter:title" content="VertexShader中的aPos">
-<meta property="og:url" content="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/">
-<meta property="twitter:url" content="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/">
+<meta property="og:title" content="[FoCG5] 6 Linear Algebra 线性代数">
+<meta name="twitter:title" content="[FoCG5] 6 Linear Algebra 线性代数">
+<meta property="og:url" content="https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
+<meta property="twitter:url" content="https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
 <meta property="og:site_name" content="H3DEngine non-official Site">
-<meta property="og:description" content="看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。">
-<meta name="twitter:description" content="看着Learning OpenGL的教程，突然忘了shader中的location是怎么用的。找回来，记一下。">
+<meta property="og:description" content="图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。">
+<meta name="twitter:description" content="图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。">
 <meta property="og:locale" content="en">
 
   
-    <meta property="article:published_time" content="2023-07-15T15:06:14">
+    <meta property="article:published_time" content="2023-09-21T23:51:03">
   
   
-    <meta property="article:modified_time" content="2023-07-15T15:06:14">
+    <meta property="article:modified_time" content="2023-09-21T23:51:03">
   
-  
-  
-    
-      <meta property="article:section" content="Tech">
-    
-      <meta property="article:section" content="Shader">
-    
   
   
     
-      <meta property="article:tag" content="OpenGL">
+      <meta property="article:section" content="Computer Graphics">
     
-      <meta property="article:tag" content="Shader">
+      <meta property="article:section" content="Graphics">
+    
+  
+  
+    
+      <meta property="article:tag" content="Computer Graphics">
+    
+      <meta property="article:tag" content="FoCG5">
     
   
 
@@ -96,14 +96,14 @@
 
 
 
-    <title>VertexShader中的aPos</title>
+    <title>[FoCG5] 6 Linear Algebra 线性代数</title>
 
     <link rel="icon" href="https://h3dengine.com/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/">
+    <link rel="canonical" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -286,19 +286,19 @@ code.has-jax {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      VertexShader中的aPos
+      [FoCG5] 6 Linear Algebra 线性代数
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time datetime="2023-07-15T15:06:14&#43;08:00">
+      <time datetime="2023-09-21T23:51:03&#43;08:00">
         
   
   
   
   
-    2023-07-15 15:06:14
+    2023-09-21 23:51:03
   
 
       </time>
@@ -308,9 +308,9 @@ code.has-jax {
   
     <span></span>
     
-      <a class="category-link" href="https://h3dengine.com/categories/tech">Tech</a>, 
+      <a class="category-link" href="https://h3dengine.com/categories/computer-graphics">Computer Graphics</a>, 
     
-      <a class="category-link" href="https://h3dengine.com/categories/shader">Shader</a>
+      <a class="category-link" href="https://h3dengine.com/categories/graphics">Graphics</a>
     
   
 
@@ -320,12 +320,162 @@ code.has-jax {
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>在看Learning OpenGL的教程，看到Basic Lighting一章，突然看到vertex shader<a href="https://learnopengl.com/code_viewer_gh.php?code=src/2.lighting/2.1.basic_lighting_diffuse/2.1.light_cube.vs">这里</a>和<a href="https://learnopengl.com/code_viewer_gh.php?code=src/2.lighting/2.2.basic_lighting_specular/2.2.light_cube.vs">这里</a>中的aPos:</p>
-<pre tabindex="0"><code>layout (location = 0) in vec3 aPos;
-</code></pre><p>突然记不起在不是Uniform的情况下，如何给location变量传值。</p>
-<p>于是往前翻了翻，到了<a href="https://learnopengl-cn.github.io/01%20Getting%20started/04%20Hello%20Triangle/">你好，三角形</a>一章，其中有一句“我们同样也通过layout (location = 0)设定了输入变量的位置值(Location)你后面会看到为什么我们会需要这个位置值。”。在后面“链接顶点属性”一节中，提到了<code>glVertexAttribPointer</code>的第一个参数使用到了顶点属性的位置值，因此这里传入了0。</p>
-<p>再回到Basic Lighting一章中，看了下cpp，是先把vertices数据绑定到VBO（Vertex Buffer Object），然后使用glVertexAttribPointer指定顶点。由于两个对象都是cube，glBindBuffer只绑定一次，数据就都可以使用了。</p>
-<p>看过，敲过，然后还是总忘。</p>
+              <p>图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。</p>
+<p>如果读者对线性代数比较熟悉，可以跳过本章。不过，即使对这类读者来说，也会有一些启发性的小知识，例如行列式的发展以及奇异值和特征值分解的讨论。</p>
+<h1 id="61-行列式">6.1 行列式</h1>
+<p>我们通常使用行列式来解线性方程。此外，从图形学方面来看，我们还可以把行列式看作多维向量的另一种形式。对二维向量$\boldsymbol{a}$和$\boldsymbol{b}$，行列式$|\boldsymbol{ab}|$的就是这两个向量形成的面积（图6.1）。这个面积是有符号的，如果是右手系，则结果为正；左手系结果为负。也就是$|\boldsymbol{ab}| = -|\boldsymbol{ba}|$。在2D中，我们说的“右手系”是指第一个向量沿逆时针旋转最少的角度就可以与第二个向量重合。</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.1.png" alt="image-6.1"></p>
+<p>在三维空间中，行列式是由三个向量组成的，三维向量$\boldsymbol{a}$、$\boldsymbol{b}$、$\boldsymbol{c}$组成的行列式$|\boldsymbol{abc}|$是一个由这三个向量组成的平行六面体（图6.2）。</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.2.png" alt="image-6.2"></p>
+<p>为了计算二维行列式，我们需要首先了解一些性质。</p>
+<p>当我们缩放其中一个向量，平行四边形的面积也随之缩放同样的倍数（图6.3）：</p>
+<p>$$
+|(k\boldsymbol{a})\boldsymbol{b}| = |\boldsymbol{a}(k\boldsymbol{b})| = k|\boldsymbol{ab}|
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.3-scaling.png" alt="image-6.3-scaling"></p>
+<p>同样，我们对平行四边形进行<em>剪切</em>变换，也不会改变其面积（图6.4）：</p>
+<p>$$
+|(\boldsymbol{a}+k\boldsymbol{b})\boldsymbol{b}| = |\boldsymbol{a}(\boldsymbol{b}+k\boldsymbol{a})| = |\boldsymbol{ab}|
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.4-shearing.png" alt="image-6.4-shearing"></p>
+<p>此外，行列式还有以下属性：</p>
+<p>$$
+|\boldsymbol{a}(\boldsymbol{b}+\boldsymbol{c})| = |\boldsymbol{ab}| + |\boldsymbol{ac}|
+$$</p>
+<p>如图6.5所示，我们可以在不改变面积的情况下，把两个平行四边形的边进行滑动，形成一个大的平行四边形。</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.5.png" alt="image-6.5"></p>
+<p>假设有笛卡尔坐标系下的两个向量$\boldsymbol{a}$和$\boldsymbol{b}$，则：</p>
+<p>$$
+\begin{eqnarray}
+|\boldsymbol{ab}| &amp; = &amp; |(x_a\boldsymbol{x} + y_a\boldsymbol{y} )(x_b\boldsymbol{x} + y_b\boldsymbol{y})| \\
+~ &amp; = &amp; x_ax_b|\boldsymbol{xx}| + x_ay_b|\boldsymbol{xy}| + y_ax_b|\boldsymbol{yx}| + y_ay_b|\boldsymbol{yy}| \\
+~ &amp; = &amp; x_ax_b(0) + x_ay_b(+1) + y_ax_b(-1) + y_ay_b(0) \\
+~ &amp; = &amp; x_ay_b - y_ax_b.
+\end{eqnarray}
+$$</p>
+<p>化简的时候用到了一个性质：对于任意的向量$\boldsymbol{v}$，都有$|\boldsymbol{vv}|=0$。因为共线的两个向量组成的平行四边形的面积为0。</p>
+<p>在三维情况中，三维向量 $\boldsymbol{a}$ 、 $\boldsymbol{b}$ 、 $\boldsymbol{c}$ 的行列式用 $|\boldsymbol{abc}|$ 表示。同2D情况一样，我们可以将其展开为：</p>
+<p>$$
+\begin{eqnarray}
+|\boldsymbol{abc}| &amp; = &amp; |(x_a\boldsymbol{x} + y_a\boldsymbol{y} + z_a\boldsymbol{z})(x_b\boldsymbol{x} + y_b\boldsymbol{y} + z_b\boldsymbol{z})(x_c\boldsymbol{x} + y_c\boldsymbol{y} + z_c\boldsymbol{z})| \\
+~ &amp; = &amp; x_ay_bz_c - x_az_by_c - y_ax_bz_c + y_az_bx_c + z_ax_by_c - z_ay_bx_c.
+\end{eqnarray}
+$$</p>
+<p>显然，随着维数的增加，以这种方式来计算行列式会变得越来越难看。我们将在第 6.3 节讨论怎样在计算行列式的时候更不容易出错。</p>
+<p><!-- raw HTML omitted --><strong>例2</strong><!-- raw HTML omitted --> 在计算一个由另外两个向量的线性组合而得到的向量时，行列式便应运而生了。例如，如果我们用向量$\boldsymbol{a}$和$\boldsymbol{b}$来表示向量$\boldsymbol{c}$，即：</p>
+<p>$$
+\boldsymbol{c} = a_c\boldsymbol{a} + b_c\boldsymbol{b}
+$$</p>
+<p><img src="http://img-sg.zhnpng.com/img/ebooks/focg5th/image-6.6.png" alt="image-6.6"></p>
+<blockquote>
+<p>图6.6 左侧图中，向量 $\boldsymbol{c}$ 可以表示为 $a_c\boldsymbol{a} + b_c\boldsymbol{b}$ 。右侧图中，由向量 $\boldsymbol{a}$ 和 $\boldsymbol{c}$ 形成的平行四边形实际是剪切了的由 $b_c\boldsymbol{b}$ 和 $\boldsymbol{a}$ 形成的平行四边形。</p>
+</blockquote>
+<p>由图6.6可得，下面等式两边所表示的平行四边形的面积是相等的：</p>
+<p>$$
+|(b_c\boldsymbol{b})\boldsymbol{a}| = |\boldsymbol{ca}|
+$$</p>
+<p>可得$b_c$的值为：</p>
+<p>$$
+b_c = \frac {|\boldsymbol{ca}|}{|\boldsymbol{ba}|}
+$$</p>
+<p>类似可得：</p>
+<p>$$
+a_c = \frac {|\boldsymbol{bc}|}{|\boldsymbol{ba}|}
+$$</p>
+<p>这实际是二维版本的<a href="https://zh.wikipedia.org/zh-hans/%E5%85%8B%E8%90%8A%E5%A7%86%E6%B3%95%E5%89%87"><em>克莱姆法则</em></a>。在6.3.2中我们会详细解释。</p>
+<h1 id="62-矩阵">6.2 矩阵</h1>
+<p>矩阵是由数字元素组成的、遵循一定运算法则的数组。下面的数组有两行三列：</p>
+<p>$$
+\begin{bmatrix}
+1.7 &amp; -1.2 &amp; 4.2 \\
+3.0 &amp; 4.5 &amp; -7.2 \\
+\end{bmatrix}
+$$</p>
+<p>矩阵在计算机图形学中有很多用处，如进行空间变换等。在讨论中， 我们假设矩阵的元素都是实数。本章会介绍矩阵的运算和方阵（即行数和列数相同的矩阵）对应的行列式。</p>
+<h2 id="621-matrix-arithmetic-矩阵运算">6.2.1 Matrix Arithmetic 矩阵运算</h2>
+<p>一个矩阵和一个常数相乘，等于这个矩阵中每个元素与这个常数相乘，如：</p>
+<p>$$
+2\left[\begin{matrix}
+1 &amp; -4 \\
+3 &amp; 2
+\end{matrix}\right]
+= \left[\begin{matrix}
+2 &amp; -8 \\
+6 &amp; 4
+\end{matrix}\right]
+$$</p>
+<p>矩阵的加法就是矩阵的每个元素进行相加：</p>
+<p>$$
+\left[ \begin{matrix}
+1 &amp; -4 \\
+3 &amp; 2
+\end{matrix}\right]</p>
+<ul>
+<li>\left[\begin{matrix}
+2 &amp; 2 \\
+2 &amp; 2
+\end{matrix} \right]
+= \left[\begin{matrix}
+3 &amp; -2 \\
+5 &amp; 4
+\end{matrix}\right]
+$$</li>
+</ul>
+<p>对矩阵乘法，我们将第一个矩阵的每一行与第二个矩阵的列进行“相乘”：</p>
+<h1 id="endarray-endmatrix-right">$$
+\left[ \begin{matrix}
+a_{11}&amp;\cdots&amp; a_{1m} \\
+\vdots&amp;\ &amp;\vdots \\
+\hline a_{i1}&amp;\cdots&amp;a_{im} \\
+\hline \vdots&amp;\ &amp;\vdots \\
+a_{r1}&amp;\cdots&amp; a_{rm} \\
+\end{matrix} \right]
+\left[ \begin{matrix} \begin{array}{cc|c|cc}
+b_{11}&amp;\cdots&amp; b_{1j} &amp; \cdots &amp; b_{1c} \\
+\vdots &amp; \  &amp; \vdots &amp; \  &amp; \vdots \\
+b_{m1} &amp; \cdots &amp; b_{mj} &amp; \cdots &amp; b_{mc} \\
+\end{array} \end{matrix} \right]</h1>
+<p>\left[ \begin{matrix}
+p_{11} &amp; \cdots &amp; p_{1j} &amp; \cdots&amp;p_{1c} \\
+\vdots &amp; \ &amp; \vdots &amp; \  &amp; \vdots \\
+p_{i1} &amp; \cdots&amp; \boxed{p_{ij}} &amp; \cdots &amp; p_{ic} \\
+\vdots &amp; \ &amp;\vdots &amp; \ &amp; \vdots \\
+p_{r1} &amp; \cdots &amp; p_{rj} &amp;  \cdots &amp; p_{rc} \\
+\end{matrix} \right]
+$$</p>
+<p>其中，元素$p_{ij}$的计算过程如下：</p>
+<p>$$
+p_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{im}b_{mj}
+$$</p>
+<p>只有当左侧矩阵的列数等于右侧矩阵的行数时，才可以得到两个矩阵的乘积。例如：</p>
+<p>$$
+\left[ \begin{matrix}
+0 &amp; 1 \\
+2 &amp; 3 \\
+4 &amp; 5 \end{matrix} \right]
+\left[ \begin{matrix}
+6 &amp; 7 &amp; 8 &amp; 9 \\
+0 &amp; 1 &amp; 2 &amp; 3
+\end{matrix} \right]
+= \left[ \begin{matrix}
+0 &amp; 1 &amp; 2 &amp; 3 \\
+12 &amp; 17 &amp; 22 &amp; 27 \\
+24 &amp; 33 &amp; 42 &amp; 51
+\end{matrix} \right]
+$$</p>
+<p>在大多数情况下，矩阵乘法是不可交换的：</p>
+<p>$$
+\bold{AB} \neq \bold{BA}
+$$</p>
+<p>同样，即使$\bold{AB} = \bold{AC}$，也不能导出$\bold{B} = \bold{C}$。但幸运的是，矩阵乘法是满足结合律和分配律的：</p>
+<p>$$
+(\bold{AB})\bold{C} = \bold{A}(\bold{BC}) \\
+\bold{A}(\bold{B} + \bold{C}) = \bold{AB} + \bold{AC} \\
+(\bold{A} + \bold{B})\bold{C} = \bold{AC} + \bold{BC}
+$$</p>
+<blockquote>
+<p>TBD</p>
+</blockquote>
 
               
 
@@ -340,9 +490,9 @@ code.has-jax {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small"></span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://h3dengine.com/tags/opengl/">OpenGL</a>
+  <a class="tag tag--primary tag--small" href="https://h3dengine.com/tags/computer-graphics/">Computer Graphics</a>
 
-  <a class="tag tag--primary tag--small" href="https://h3dengine.com/tags/shader/">Shader</a>
+  <a class="tag tag--primary tag--small" href="https://h3dengine.com/tags/focg5/">FoCG5</a>
 
                   </div>
                 
@@ -355,7 +505,7 @@ code.has-jax {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-tooltip="[FoCG5] 6 Linear Algebra 线性代数" aria-label=": [FoCG5] 6 Linear Algebra 线性代数">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml"></span>
@@ -363,7 +513,7 @@ code.has-jax {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/04/%E4%BD%BF%E7%94%A8hugo%E5%88%9B%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" data-tooltip="使用Hugo创建静态博客" aria-label=": 使用Hugo创建静态博客">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" data-tooltip="VertexShader中的aPos" aria-label=": VertexShader中的aPos">
           
               <span class="hide-xs hide-sm text-small icon-mr"></span>
               <i class="fa fa-angle-right"></i>
@@ -381,13 +531,13 @@ code.has-jax {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="" aria-label="">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -418,9 +568,9 @@ code.has-jax {
     </div>
     <script type="text/javascript">
       var disqus_config = function() {
-        this.page.url = 'https:\/\/h3dengine.com\/2023\/07\/vertexshader%E4%B8%AD%E7%9A%84apos\/';
+        this.page.url = 'https:\/\/h3dengine.com\/2023\/09\/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0\/';
         
-          this.page.identifier = '\/2023\/07\/vertexshader%E4%B8%AD%E7%9A%84apos\/'
+          this.page.identifier = '\/2023\/09\/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0\/'
         
       };
       (function() {
@@ -456,7 +606,7 @@ code.has-jax {
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" data-tooltip="[FoCG5] 6 Linear Algebra 线性代数" aria-label=": [FoCG5] 6 Linear Algebra 线性代数">
+            <a class="post-action-btn btn btn--disabled">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml"></span>
@@ -464,7 +614,7 @@ code.has-jax {
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/04/%E4%BD%BF%E7%94%A8hugo%E5%88%9B%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/" data-tooltip="使用Hugo创建静态博客" aria-label=": 使用Hugo创建静态博客">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" data-tooltip="VertexShader中的aPos" aria-label=": VertexShader中的aPos">
           
               <span class="hide-xs hide-sm text-small icon-mr"></span>
               <i class="fa fa-angle-right"></i>
@@ -482,13 +632,13 @@ code.has-jax {
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="" aria-label="">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://h3dengine.com/2023/07/vertexshader%E4%B8%AD%E7%9A%84apos/" title="" aria-label="">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" title="" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
@@ -519,13 +669,13 @@ code.has-jax {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fh3dengine.com%2F2023%2F07%2Fvertexshader%25E4%25B8%25AD%25E7%259A%2584apos%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fh3dengine.com%2F2023%2F09%2Ffocg5-6-linear-algebra-%25E7%25BA%25BF%25E6%2580%25A7%25E4%25BB%25A3%25E6%2595%25B0%2F" aria-label="">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span></span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fh3dengine.com%2F2023%2F07%2Fvertexshader%25E4%25B8%25AD%25E7%259A%2584apos%2F" aria-label="">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fh3dengine.com%2F2023%2F09%2Ffocg5-6-linear-algebra-%25E7%25BA%25BF%25E6%2580%25A7%25E4%25BB%25A3%25E6%2595%25B0%2F" aria-label="">
           <i class="fab fa-twitter" aria-hidden="true"></i><span></span>
         </a>
       </li>

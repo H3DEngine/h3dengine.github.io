@@ -8,11 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Sep 2023 23:51:03 +0800</lastBuildDate><atom:link href="https://h3dengine.com/categories/graphics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[FoCG5] 6 Linear Algebra</title>
-      <link>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</link>
+      <title>[FoCG5] 6 Linear Algebra 线性代数</title>
+      <link>https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</link>
       <pubDate>Thu, 21 Sep 2023 23:51:03 +0800</pubDate>
       
-      <guid>https://h3dengine.com/2023/09/focg5-6-linear-algebra/</guid>
+      <guid>https://h3dengine.com/2023/09/focg5-6-linear-algebra-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/</guid>
       <description>图形程序中最通用的工具或许是对点和矢量进行改变或转换的矩阵。在下一章中，我们将了解如何用单列矩阵表示向量，以及如何通过与方阵相乘以便在不同的基来表示向量。我们还将介绍如何利用这种乘法来实现向量的缩放、旋转和平移等变化。在本章中，我们将在二维和三维的场景中，通过直觉及算法来从几何的角度回顾基本线性代数。</description>
     </item>
     
